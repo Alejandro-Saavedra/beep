@@ -1,5 +1,5 @@
 import { SignInButton, useUser } from "@clerk/nextjs";
-import Head from "next/head";
+// import Head from "next/head";
 // import Link from "next/link";
 // import SignInPage from "~/signIn";
 import { api } from "~/utils/api";

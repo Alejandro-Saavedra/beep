@@ -6,4 +6,6 @@ body {
   @apply bg-black text-slate-100;
 
   overscroll-behavior: none;
+  scrollbar-width: none; /* "thin" or "auto" or "none" */
+  scrollbar-color: #000000 #000000; /* thumb and track color */
 }
