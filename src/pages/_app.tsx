@@ -12,7 +12,7 @@ const MyApp: AppType = ({ Component, pageProps }: AppProps) => {
       <Head>
         <title>Quack</title>
         <meta name="description" content="🦆" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/ComputerFace.gif" />
       </Head>
 
       <Toaster position="bottom-center" reverseOrder={false} />
