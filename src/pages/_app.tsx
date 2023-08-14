@@ -13,9 +13,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         <meta name="description" content="🦆" />
         <link rel="icon" href="/ComputerFace.gif" />
       </Head>
-
       <Toaster position="bottom-center" reverseOrder={false} />
-
       <Component {...pageProps} />
     </ClerkProvider>
   );
