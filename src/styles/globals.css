@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-black text-slate-100;
+  @apply bg-[#212121] text-slate-100;
 
   overscroll-behavior: none;
   scrollbar-width: none; /* "thin" or "auto" or "none" */
