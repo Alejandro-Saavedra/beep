@@ -98,8 +98,8 @@ export const postRouter = createTRPCRouter({
     .input(
       z.object({
         // this is what guarantee what the content will have
-        // content: z.string().min(1).max(280),
-        content: z.string().emoji("Only emojis are allowed!").min(1).max(280),
+        content: z.string().min(1).max(280),
+        // content: z.string().emoji("Only emojis are allowed!").min(1).max(280),
       }),
     )
     .mutation(async ({ ctx, input }) => {
