@@ -36,7 +36,7 @@ jobs:
       - name: TypeScript Type Check
         run: npx tsc --noEmit
         env:
-          DATABASE_URL: "https://fake.com"
+          DATABASE_URL: "file:./db.sqlite"
 
       - name: Lint
         run: yarn lint # assuming you have a lint script in your package.json
