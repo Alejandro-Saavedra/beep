@@ -22,8 +22,11 @@ const addUserDataToPost = async (posts: Post[]) => {
 
   return posts.map((post) => {
     const author = users.find((user) => user.id === post.authorId);
+    // const author1 = users.find((user) => user.)
 
-    if (!author || !author.userName) {
+    if (!author) {
+      console.log("Post causing issue:", post);
+      console.log("Retrieved users:", users);
       throw new TRPCError({
         code: "INTERNAL_SERVER_ERROR",
         message: "Author for post not found 🥺",
@@ -98,8 +101,8 @@ export const postRouter = createTRPCRouter({
     .input(
       z.object({
         // this is what guarantee what the content will have
-        content: z.string().min(1).max(280),
-        // content: z.string().emoji("Only emojis are allowed!").min(1).max(280),
+        // content: z.string().min(1).max(280),
+        content: z.string().emoji("Only emojis are allowed!").min(1).max(280),
       }),
     )
     .mutation(async ({ ctx, input }) => {
